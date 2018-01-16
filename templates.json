@@ -7,11 +7,8 @@
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/nginx.png",
     "image": "nginx:latest",
-    "ports": [
-      "80/tcp",
-      "443/tcp"
-    ],
-    "volumes": ["/etc/nginx", "/var/www/html"]
+    "ports": ["80/tcp","443/tcp"],
+    "volumes": ["/etc/nginx","/var/www/html"]
   },
     {
     "type": "container",
@@ -21,9 +18,7 @@
     "platform": "linux",
     "logo": "https://alexurquhart.com/img/postgis-docker/postgis-logo.png",
     "image": "kartoza/postgis:latest",
-    "ports": [
-      "5432/tcp"
-    ],
+    "ports": ["5432/tcp"],
     "volumes": ["/var/lib/postgresql"]
   }
 ]
