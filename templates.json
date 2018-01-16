@@ -20,7 +20,7 @@
     "image": "mdillon/postgis:latest",
     "ports": ["5432/tcp"],
     "env": [
-      {"name": "POSTGRES_PASSWORD","label": "Superuser password"},
+      {"name": "POSTGRES_PASSWORD","label": "Superuser password"}
     ],
     "volumes": ["/var/lib/postgresql/"]
   },
