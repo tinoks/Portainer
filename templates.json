@@ -22,7 +22,7 @@
     "logo": "https://alexurquhart.com/img/postgis-docker/postgis-logo.png",
     "image": "kartoza/postgis:latest",
     "ports": [
-      "5432/tcp",
+      "5432/tcp"
     ],
     "volumes": ["/var/lib/postgresql"]
   }
