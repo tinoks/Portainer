@@ -24,7 +24,7 @@
       {"name": "POSTGRES_PASSWORD","label": "Superuser password"},
       {"name": "POSTGRES_DBNAME","label": "Database name"}
     ],
-    "volumes": ["/var/lib/postgresql/9.6/main"]
+    "volumes": ["/var/lib/postgresql/9.6/main","/var/lib/postgresql/data"]
   },
   {
     "type": "container",
