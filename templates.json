@@ -18,12 +18,28 @@
     "platform": "linux",
     "logo": "https://alexurquhart.com/img/postgis-docker/postgis-logo.png",
     "image": "kartoza/postgis:latest",
+    "ports": ["5432/tcp"],
     "env": [
       {"name": "POSTGRES_USER","label": "Superuser"},
       {"name": "POSTGRES_PASSWORD","label": "Superuser password"},
       {"name": "POSTGRES_DBNAME","label": "Database name"}
     ],
-    "ports": ["5432/tcp"],
     "volumes": ["/var/lib/postgresql"]
+  },
+  {
+    "type": "container",
+    "title": "SQL Server Express",
+    "description": "Microsoft SQL Server Express for Windows containers",
+    "categories": ["database"],
+    "platform": "windows",
+    "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
+    "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
+    "image": "microsoft/mssql-server-windows-express:latest",
+    "ports": ["1433/tcp"],
+    "env": [
+      {"name": "ACCEPT_EULA","set": "Y"},
+      {"name": "sa_password","label": "SA password"}
+    ],
+    "volumes": ["C:/temp/"]
   }
 ]
