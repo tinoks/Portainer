@@ -17,14 +17,12 @@
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://alexurquhart.com/img/postgis-docker/postgis-logo.png",
-    "image": "kartoza/postgis:latest",
+    "image": "mdillon/postgis:latest",
     "ports": ["5432/tcp"],
     "env": [
-      {"name": "POSTGRES_USER","label": "Superuser"},
       {"name": "POSTGRES_PASSWORD","label": "Superuser password"},
-      {"name": "POSTGRES_DBNAME","label": "Database name"}
     ],
-    "volumes": ["/var/lib/postgresql/9.6/main","/var/lib/postgresql/data"]
+    "volumes": ["/var/lib/postgresql/"]
   },
   {
     "type": "container",
