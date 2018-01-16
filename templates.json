@@ -24,6 +24,6 @@
     "ports": [
       "5432/tcp",
     ],
-    "volumes": ["/pg_data", "/var/lib/postgresql"]
+    "volumes": ["/var/lib/postgresql"]
   }
 ]
