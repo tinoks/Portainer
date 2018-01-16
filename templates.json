@@ -18,6 +18,11 @@
     "platform": "linux",
     "logo": "https://alexurquhart.com/img/postgis-docker/postgis-logo.png",
     "image": "kartoza/postgis:latest",
+    "env": [
+      {"name": "POSTGRES_USER","label": "Superuser"},
+      {"name": "POSTGRES_PASSWORD","label": "Superuser password"},
+      {"name": "POSTGRES_DBNAME","label": "Database name"}
+    ],
     "ports": ["5432/tcp"],
     "volumes": ["/var/lib/postgresql"]
   }
