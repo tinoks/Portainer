@@ -39,5 +39,16 @@
       {"name": "sa_password","label": "SA password"}
     ],
     "volumes": ["C:/temp/"]
+  },
+  {
+    "type": "container",
+    "title": "Geoserver",
+    "description": "GeoServer is an open source server for sharing geospatial data.",
+    "categories": ["geoserver"],
+    "platform": "java",
+    "logo": "http://geoserver.org/img/geoserver-logo.png",
+    "image": "neowaylabs/geoserver:latest",
+    "ports": ["8080/tcp"],
+    "volumes": ["/opt/geoserver/data_dir"]
   }
 ]
