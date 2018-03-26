@@ -1,5 +1,16 @@
 [
   {
+    
+    "type": "container",
+    "title": "Oscarfonts geoserver",
+    "description": "Oscarfonts geoserver",
+    "categories": ["geosever"],
+    "platform": "linux",
+    "image": "oscarfonts/geoserver:latest",
+    "ports": ["8080/tcp"],
+    "volumes": ["var/local/geoserver","/var/local/geoserver-exts"]
+  },
+  {
     "type": "container",
     "title": "Nginx",
     "description": "High performance web server",
