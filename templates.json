@@ -1,4 +1,15 @@
 [
+    {
+    
+    "type": "container",
+    "title": "Open Source Routing Machine",
+    "description": "High performance routing engine written in C++14 designed to run on OpenStreetMap data.",
+    "categories": ["routing"],
+    "platform": "linux",
+    "image": "osrm/osrm-backend:latest",
+    "ports": ["5000/tcp"],
+    "volumes": ["/data"]
+  },
   {
     
     "type": "container",
