@@ -7,6 +7,10 @@
     "platform": "linux",
     "image": "couchdb:latest",
     "ports": ["5984/tcp"],
+    "env": [
+      {"name": "COUCHDB_USER","label": "Superuser"},
+      {"name": "COUCHDB_PASSWORD","label": "Superuser password"}
+    ],
     "volumes": ["/opt/couchdb/etc/","/opt/couchdb/data"]
   },
     {
