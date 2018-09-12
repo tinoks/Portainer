@@ -1,6 +1,15 @@
 [
+  {
+    "type": "container",
+    "title": "couchdb",
+    "description": "Store your data safely, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks JSON natively and supports binary for all your data storage needs.",
+    "categories": ["database"],
+    "platform": "linux",
+    "image": "couchdb:latest",
+    "ports": ["5984/tcp"],
+    "volumes": ["/opt/couchdb/etc/","/opt/couchdb/data"]
+  },
     {
-    
     "type": "container",
     "title": "Open Source Routing Machine",
     "description": "High performance routing engine written in C++14 designed to run on OpenStreetMap data.",
